@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>coco medaka 35</title>
+
+
+
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style_spinner.css">
+
+
+</head>
+<body>
+
+<div id="main">
+
+<section>
+
+<h2>予約注文</h2>
+
+
+<h1>※ご希望のメダカの匹数と受取希望日を選択し、<br>
+最後に確定ボタンを押してください。</h1>
+<form>
+<div class="list">
+
+<figure><img src="images/medaka1.jpg" alt=""></figure>
+<h4>楊貴妃</h4>
+<form id="form1">
+<input type="hidden" name="breed1" value="楊貴妃">
+
+<p>
+<select class="select1" name="qty1" style="font-size:3.5vw">
+<option value="">希望数を入力</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+
+</select>
+</p>
+
+</form>
+
+</div>
+
+<div class="list">
+<figure><img src="images/medaka2.jpg" alt=""></figure>
+<h4>幹之</h4>
+<form id="form2">
+<input type="hidden" name="breed2" value="幹之">
+
+<p>
+<select class="select2" name="qty2" style="font-size:3.5vw">
+<option value="">希望数を入力</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+
+</select>
+</p>
+
+</form>
+</div>
+
+<div class="list">
+<figure><img src="images/medaka3.jpg" alt=""></figure>
+<h4>オロチ</h4>
+<form id="form3">
+<input type="hidden" name="breed3" value="オロチ">
+<p>
+<select class="select3" name="qty3" style="font-size:3.5vw">
+<option value="">希望数を入力</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+
+</select>
+</p>
+
+</form>
+</div>
+
+<div class="list">
+
+<figure><img src="images/medaka4.jpg" alt=""></figure>
+<h4>りんね</h4>
+<form id="form4">
+<input type="hidden" name="breed4" value="りんね">
+
+<p>
+<select class="select4" name="qty4" style="font-size:3.5vw">
+<option value="">希望数を入力</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+
+</select>
+</p>
+
+</form>
+</div>
+
+<div class="list">
+
+<figure><img src="images/medaka5.jpg" alt=""></figure>
+<h4 style="font-size:4vw">月弓</h4>
+<form id="form5">
+<input type="hidden" name="breed5" value="月弓">
+
+<p>
+<select class="select5" name="qty5" style="font-size:3.5vw">
+<option value="">希望数を入力</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+
+</select>
+</p>
+
+</form>
+</div>
+
+<div class="list">
+<!-----a href="medical.html"----->
+<figure><img src="images/medaka6.jpg" alt=""></figure>
+<h4>夜桜</h4>
+<form id="form6">
+<input type="hidden" name="breed6" value="夜桜">
+
+<p>
+<select class="select6" name="qty6" style="font-size:3.5vw">
+<option value="">希望数を入力</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+
+</select>
+</p>
+
+</form>
+</div>
+
+<form>
+
+
+<h1>-</h1>
+
+<h1>受取希望日を選択してください。</h1>
+
+ <h1><div><input type="date" name="daytime" class="button" id="tomorrow" style="font-size:6vw" required></div></h1>
+<h1>受取希望日</h1>
+
+<h5><div><input type="submit" value="確定する" class="button" ></div></h5>
+</form>
+        
+
+
+
+
+<script>
+window.addEventListener('DOMContentLoaded', ()=>{
+  const d=new Date();
+  d.setDate(d.getDate()+1);
+  tomorrow.setAttribute("min",d.toISOString().substr(0,10));
+
+  const d1=new Date();
+  d1.setDate(d1.getDate()+2+28);
+  tomorrow.setAttribute("max",d1.toISOString().substr(0,10));
+
+});
+
+    var today = new Date();
+    today.setDate(today.getDate());
+    var yyyy = today.getFullYear();
+    var mm = ("0"+(today.getMonth()+1)).slice(-2);
+    var dd = ("0"+today.getDate()).slice(-2);
+    document.getElementById("tomorrow").value=yyyy+'-'+mm+'-'+dd;
+
+</script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+
+
+    <script src="index_modal.js"></script>
+
+<script src="style_modal.js"></script>
+
+
+ <script src="spinner.js"></script>
+ <script src="index.js"></script>
+ <script src="liff.js"></script>
+	
+	
+</body>
+</html>
